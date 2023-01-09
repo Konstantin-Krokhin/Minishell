@@ -7,7 +7,8 @@ CFLAGS = -Wall -Werror -Wextra
 
 CC = cc
 
-SRC = learn1.c
+SRC = main.c
+#learn1.c
 
 DEPS =
 
