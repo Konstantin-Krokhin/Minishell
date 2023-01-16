@@ -6,7 +6,7 @@
 /*   By: kokrokhi <kokrokhi@students.42wolfsburg    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/01 20:51:09 by kokrokhi          #+#    #+#             */
-/*   Updated: 2023/01/11 16:52:31 by kokrokhi         ###   ########.fr       */
+/*   Updated: 2023/01/16 19:35:54 by kokrokhi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,7 @@
 int	wait_dup_fd_close(int pid, int pipe_ends[2], int i)
 {
 	waitpid(pid, NULL, 0);
+	printf("\npid = %d\n", pid);
 	dup2(pipe_ends[0], STDIN_FILENO);
 	close(pipe_ends[0]);
 	close(pipe_ends[1]);
@@ -29,16 +30,6 @@ int	calc_size(char **argv)
 	while (argv[size] != 0)
 		size++;
 	return (size);
-}
-
-int	pipe_and_fork(int pipe_ends[2], pid_t *pid)
-{
-	if (pipe(pipe_ends) == -1)
-		return (1);
-	*pid = fork();
-	if (*pid == -1)
-		return (1);
-	return (0);
 }
 
 // int	close_and_return(int in_file, int out_file)

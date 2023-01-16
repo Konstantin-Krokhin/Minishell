@@ -6,7 +6,7 @@
 /*   By: kokrokhi <kokrokhi@students.42wolfsburg    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/01 23:17:35 by kokrokhi          #+#    #+#             */
-/*   Updated: 2023/01/11 16:31:05 by kokrokhi         ###   ########.fr       */
+/*   Updated: 2023/01/16 20:00:03 by kokrokhi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -82,7 +82,8 @@ void	do_child_work(char *argv, char **envp,
 	char	*cmd_path;
 	char	**cmd;
 
-	dup2(out_fd, STDOUT_FILENO);
+	printf("-%d-", out_fd);
+	//dup2(out_fd, STDOUT_FILENO);
 	close(pipe_ends[0]);
 	close(pipe_ends[1]);
 	cmd = ft_split(argv, ' ');
