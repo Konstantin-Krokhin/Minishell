@@ -6,7 +6,7 @@
 /*   By: mgranero <mgranero@student.42wolfsburg.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/09 17:21:04 by mgranero          #+#    #+#             */
-/*   Updated: 2023/01/24 20:59:14 by mgranero         ###   ########.fr       */
+/*   Updated: 2023/01/24 21:16:58 by mgranero         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,11 +36,11 @@ int	main(void)
 		//PARSE INPUT
 		args = 0; //intialized
 		cmd = 0; //intialized
-		if (parser(buff, cmd, args) == 1)
-		{
-			err_status = 1;
-			break;
-		}
+		// if (parser(buff, cmd, args) == 1)
+		// {
+		// 	err_status = 1;
+		// 	break;
+		// }
 		//CALL COMMANDS
 		//PIPE
 		// REDIRECT
