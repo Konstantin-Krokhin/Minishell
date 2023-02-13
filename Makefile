@@ -1,6 +1,7 @@
 NAME= minishell
 
-CFLAGS = -Wall -Werror -Wextra
+CFLAGS=
+#CFLAGS = -Wall -Werror -Wextra
 READLINE_FLAG = -lreadline
 
 CC = cc

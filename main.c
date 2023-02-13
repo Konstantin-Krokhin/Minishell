@@ -6,7 +6,7 @@
 /*   By: mgranero <mgranero@student.42wolfsburg.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/09 17:21:04 by mgranero          #+#    #+#             */
-/*   Updated: 2023/01/24 21:16:58 by mgranero         ###   ########.fr       */
+/*   Updated: 2023/01/25 20:40:13 by mgranero         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -60,8 +60,8 @@ int	main(void)
  */
 static	void print_intro(void)
 {
-	printf("\n%s      . . . . .    \n  ..         42..\n ..             ..\n", CCYN);
+	printf("\n%s     . . . . . .    \n  ..         42..\n ..             ..\n", CCYN);
 	printf(".     .. ..      ..\n..   .      .    ..\n..   .   .   .   ..\n");
 	printf(" ..    ..    .   ..\n  ..        .    .\n    .. .. ..    ..\n\n%s", CNRM);
-	printf("%s   oh my Minishell!\n   ---------------%s\n",CGRN, CNRM);
+	printf("%s oh my Minishell!\n   ---------------%s\n",CGRN, CNRM);
 }

@@ -6,7 +6,7 @@
 /*   By: mgranero <mgranero@student.42wolfsburg.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/24 20:29:36 by mgranero          #+#    #+#             */
-/*   Updated: 2023/01/24 21:10:19 by mgranero         ###   ########.fr       */
+/*   Updated: 2023/01/24 21:18:00 by mgranero         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,9 +34,6 @@
 # define CMAG  "\x1B[35m"
 # define CCYN  "\x1B[36m"
 # define CWHT  "\x1B[37m"
-
-
-int	parser(char *buff, char *cmd, char *args);
 
 
 #endif
